@@ -1,0 +1,97 @@
+body {
+  color: white;
+  background-image: url(./images/background4.jpg);
+  background-position: center;
+}
+.App {
+  text-align: center;
+  margin:0;
+}
+.Title {
+  background-image: url(./images/letras-rick.jpg);
+  background-position: center;
+  background-size: cover;
+  /* height: 30vh; */
+  width: 100%;
+}
+.HeroImg {
+  background-image: url(./images/heroImage.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 47vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+.Location {
+  background-color: black;
+  display: block;
+  text-align: center;
+  opacity: 90%;
+}
+.Location input {
+  background-color: black;
+  width: 70%;
+}
+.Location spam {
+  color:rgb(204, 224, 20);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.CardLocation {
+    width: 33.33%;
+    padding: 20px;
+    margin: 5px;
+}
+.LocationInfo {
+  color:aliceblue;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+.CardResident {
+  font-family:cursive;
+  background-color: #011323;
+  border-radius: 10%;
+  opacity: 90%;
+  width: 80%;
+  margin: 20px;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgb(33, 130, 175);
+}
+.CardResident img {
+  border-radius: 50%;
+  height: 10rem;
+}
+.CardResident spam {
+  color:rgb(0, 255, 21);
+}
+
+
+
+@media screen and (min-width:650px) {
+  .CardResident {
+    width: calc((100%) /12 * 7);
+    display: flex;
+  }
+  .HeroImg {
+    height: 61vh;
+  }
+}
+@media screen and (min-width:800px) {
+  .HeroImg {
+    height: 76vh;
+  }
+  .Title {
+    height: 35vh;
+  }
+}
