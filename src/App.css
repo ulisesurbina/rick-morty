@@ -11,7 +11,7 @@ body {
   background-image: url(./images/letras-rick.jpg);
   background-position: center;
   background-size: cover;
-  /* height: 30vh; */
+  height: 27vh;
   width: 100%;
 }
 .HeroImg {
@@ -58,11 +58,13 @@ body {
   width: 100%;
 }
 .CardResident {
+  display: flex;
   font-family:cursive;
-  background-color: #011323;
+  background:linear-gradient(to bottom, #140d53, #373b37);
   border-radius: 10%;
   opacity: 90%;
-  width: 80%;
+  width: 310px;
+  height: 380px;
   margin: 20px;
   padding: 10px;
   align-items: center;
@@ -78,20 +80,50 @@ body {
 
 
 
+
 @media screen and (min-width:650px) {
-  .CardResident {
+  /* .CardResident {
     width: calc((100%) /12 * 7);
     display: flex;
-  }
+  } */
   .HeroImg {
     height: 61vh;
+  }
+  .Title {
+    height: 31vh;
   }
 }
 @media screen and (min-width:800px) {
   .HeroImg {
-    height: 76vh;
+    height: 71vh;
   }
   .Title {
     height: 35vh;
+  }
+  .md-col-6 {
+    display: inline-block;
+  }
+  .CardResident {
+    width: 340px;
+    height: 380px;
+  }
+}
+@media screen and (min-width:937px) {
+  .HeroImg {
+    height: 81vh;
+  }
+  .Title {
+    height: 40vh;
+  }
+  .CardResident {
+    width: 360px;
+  }
+}
+@media screen and (min-width:1282px) {
+  .HeroImg {
+    height: 97vh;
+  }
+  .Title {
+    height: 50vh;
   }
 }

@@ -5,14 +5,13 @@ function App() {
   
   return (
     <div className="App">
-      <header className="HeroImg" >
+      <header className="HeroImg">
       </header>
       <div className="Title" >
       </div>
       <div>
         <Location />
       </div>
-      
     </div>
   )
 }
